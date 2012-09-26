@@ -8,9 +8,9 @@
         <th>Id</th>
         <th>name</th>
         <th>description</th>
-        <th>price</th>
-        <th>Release date</th>
-        <th>bitrate</th>
+        <th>website</th>
+        <th>contact_email</th>
+        <th>meta_data</th>
 
 
     </tr>

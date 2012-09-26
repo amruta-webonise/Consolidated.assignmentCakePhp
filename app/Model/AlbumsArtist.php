@@ -20,5 +20,25 @@ class AlbumsArtist extends AppModel {
             'dependent'     => true
         )
     );
+
+//    public function add($data)
+//    {
+//        $artists = $this->Artist->find('all');
+//
+//        foreach($artists as $artist)
+//        {
+//            foreach($data as $row)
+//            {
+//
+//                if(($artist['name']==$row['name']) && (($row['name'])!=0))
+//                {
+//                    echo $artist['name'];
+//
+//                    $this->AlbumsArtist->save($this->request->data);
+//                }
+//
+//            }
+//        }
+//    }
 }
 ?>

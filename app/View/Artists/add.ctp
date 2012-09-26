@@ -1,8 +1,6 @@
 
 
-
-
-<h1>Add Album</h1>
+<h1>Add artist</h1>
 <?php echo '<br/>'; ?>
 <?php
 echo $this->Form->create('Artist');

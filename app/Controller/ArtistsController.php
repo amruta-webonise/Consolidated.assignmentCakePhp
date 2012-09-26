@@ -6,7 +6,8 @@
  * Time: 11:14 AM
  * To change this template use File | Settings | File Templates.
  */
-class ArtistsController extends AppController {
+class ArtistsController extends AppController
+{
     public $helpers = array('Html', 'Form', 'Session');
     public $components = array('Session');
 
@@ -20,13 +21,15 @@ class ArtistsController extends AppController {
     }
 
     public function add() {
-        if ($this->request->is('post')) {
+        if ($this->request->is('post'))
+        {
             $this->Artist->create();
-            if ($this->Artist->saveAssociated($this->request->data, array('deep' => true))) {
-                $this->Session->setFlash(__('The user has been saved'));
+            if ($this->Artist->saveAssociated($this->request->data, array('deep' => true)))
+            {
+                $this->Session->setFlash(__('The artist has been saved'));
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+                $this->Session->setFlash(__('The artist could not be saved. Please, try again.'));
             }
         }
     }

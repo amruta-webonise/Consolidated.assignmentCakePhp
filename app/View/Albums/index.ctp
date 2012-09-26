@@ -63,7 +63,6 @@
 
     </tr>
     <?php endforeach; ?>
-<?php //pr($albums); ?>
     <?php unset($album); ?>
 </table>
 
